@@ -22,6 +22,6 @@ declare const __VLS_export: import("vue").DefineComponent<import("vue").ExtractP
         default: string;
     };
 }>> & Readonly<{}>, {
-    lang: string;
     dir: "auto" | "ltr" | "rtl";
+    lang: string;
 }, {}, {}, {}, string, import("vue").ComponentProvideOptions, true, {}, any>;
