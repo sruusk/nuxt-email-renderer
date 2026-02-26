@@ -34,7 +34,8 @@
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare && nuxi prepare client",
     "docs:dev": "cd docs && pnpm dev",
     "docs:build": "cd docs && pnpm build",
-    "prepare": "nuxi prepare client",
+    "preinstall": "node scripts/preinstall.js || echo",
+    "prepare": "node scripts/prepare.js",
     "play:dev": "nuxi dev playground",
     "play:prod": "npm run prepack && nuxi dev playground",
     "release": "npm run lint && npm run test && npm run prepack && changelogen --release --patch && npm publish && git push --follow-tags",
@@ -76,6 +77,9 @@
     "vitest": "^3.2.4",
     "vue-i18n": "^11.2.8",
     "vue-tsc": "^3.2.4"
+  },
+  "optionalDependencies": {
+    "nuxt-email-renderer-devtools": "workspace:*"
   },
   "peerDependencies": {
     "@nuxtjs/i18n": ">=10.0.0",
