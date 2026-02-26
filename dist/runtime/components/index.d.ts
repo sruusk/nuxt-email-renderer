@@ -1,0 +1,23 @@
+export declare const emailComponents: {
+    EBody: () => Promise<any>;
+    EButton: () => Promise<any>;
+    ECodeBlock: () => Promise<any>;
+    ECodeInline: () => Promise<any>;
+    EColumn: () => Promise<any>;
+    EContainer: () => Promise<any>;
+    EFont: () => Promise<any>;
+    EHead: () => Promise<any>;
+    EHeading: () => Promise<any>;
+    EHr: () => Promise<any>;
+    EHtml: () => Promise<any>;
+    EImg: () => Promise<any>;
+    ELink: () => Promise<any>;
+    EPreview: () => Promise<any>;
+    ERow: () => Promise<any>;
+    ESection: () => Promise<any>;
+    EStyle: () => Promise<any>;
+    ESubject: () => Promise<any>;
+    EText: () => Promise<any>;
+    EMarkdown: () => Promise<any>;
+};
+export type * from './components.d';

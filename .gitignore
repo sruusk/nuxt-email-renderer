@@ -14,7 +14,8 @@ node_modules
 **/.yarn/*state*
 
 # Generated dirs
-dist
+#dist
+#!/dist/
 
 # Nuxt
 .nuxt
@@ -54,3 +55,4 @@ coverage
 Network Trash Folder
 Temporary Items
 .apdisk
+
